@@ -25,6 +25,8 @@
 
 LOCAL_PATH := $(call my-dir)
 
+ifneq ($(filter YTX703F YTX703L, $(TARGET_DEVICE)),)
+
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
 # Define a rule to create a symlink.  For use via $(eval).
@@ -50,4 +52,6 @@ ifdef BOARD_SYSTEM_EXTRA_SYMLINKS
     $(eval full_link_name := $(call append-path,$(PRODUCT_OUT)/$(TARGET_COPY_OUT_SYSTEM),$(link_name))) \
     $(eval $(call create-symlink,$(target),$(full_link_name))) \
     $(eval ALL_DEFAULT_INSTALLED_MODULES += $(full_link_name)))
+endif
+
 endif
