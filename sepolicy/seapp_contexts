@@ -3,4 +3,8 @@
 user=system domain=dataservice_app seinfo=platform name=com.qualcomm.qti.tetherservice type=system_app_data_file
 # Label the TimeKeep service as timekeep_app, and its files in /data/data/com.sony.timekeep as time_data_file
 user=system seinfo=platform name=com.sony.timekeep domain=timekeep_app type=time_data_file
+# Label the Dolby Atmos addon app as "atmos_app" domain, and its files as app_data_file
+# Since this is not signed with the platform keys, we use the "dolby" seinfo key defined
+# in mac_permissions.xml.
+user=_app seinfo=dolby name=com.atmos domain=atmos_app type=app_data_file
 

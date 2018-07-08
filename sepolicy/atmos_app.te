@@ -1,0 +1,18 @@
+type atmos_app, domain, domain_deprecated;
+
+app_domain(atmos_app)
+# Access the network.
+net_domain(atmos_app)
+# Access bluetooth.
+bluetooth_domain(atmos_app)
+
+# Binder access to some system services
+allow atmos_app audioserver_service:service_manager find;
+allow atmos_app activity_service:service_manager find;
+allow atmos_app display_service:service_manager find;
+allow atmos_app network_management_service:service_manager find;
+allow atmos_app connectivity_service:service_manager find;
+allow atmos_app appops_service:service_manager find;
+
+# These properties are defined in device/qcom/sepolicy/common
+set_prop(atmos_app, dolby_prop)
