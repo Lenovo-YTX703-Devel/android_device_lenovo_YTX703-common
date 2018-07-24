@@ -4,6 +4,8 @@
 
 /system         ext4      /dev/block/platform/soc.0/7824900.sdhci/by-name/system      flags=display="System";backup=1;wipeingui
 /system_image   emmc      /dev/block/platform/soc.0/7824900.sdhci/by-name/system      flags=display="System Image";backup=1;
+/vendor         ext4      /dev/block/platform/soc.0/7824900.sdhci/by-name/vendor      flags=display="Vendor";backup=1;wipeingui
+/vendor_image   emmc      /dev/block/platform/soc.0/7824900.sdhci/by-name/vendor      flags=display="Vendor Image";backup=1;
 /data           ext4      /dev/block/platform/soc.0/7824900.sdhci/by-name/userdata    flags=encryptable=/dev/block/platform/soc.0/7824900.sdhci/by-name/userencrypt
 /cache          ext4      /dev/block/platform/soc.0/7824900.sdhci/by-name/cache       flags=display="Cache";backup=1;wipeingui
 /countrycode    ext4      /dev/block/platform/soc.0/7824900.sdhci/by-name/countrycode flags=display="Country Code";backup=1
