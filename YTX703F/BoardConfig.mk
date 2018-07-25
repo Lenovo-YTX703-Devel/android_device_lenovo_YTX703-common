@@ -18,5 +18,5 @@
 -include device/lenovo/YTX703-common/BoardConfigCommon.mk
 
 # For build/make/tools/releasetools/edify_generator.py
-TARGET_OTA_ASSERT_DEVICE := YTX703F,yt_x703f
+TARGET_OTA_ASSERT_DEVICE := YTX703F
 
