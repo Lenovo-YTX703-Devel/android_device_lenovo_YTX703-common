@@ -226,6 +226,10 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
 
+# Display calibration
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/display/pp_calib_data_nt35597_video_mode_dual_dsi_panel_without_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pp_calib_data_nt35597_video_mode_dual_dsi_panel_without_DSC.xml
+
 # IPC router config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
