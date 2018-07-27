@@ -18,7 +18,7 @@
 -include device/lenovo/YTX703-common/BoardConfigCommon.mk
 
 # For build/make/tools/releasetools/edify_generator.py
-TARGET_OTA_ASSERT_DEVICE := YTX703L,yt_x703l
+TARGET_OTA_ASSERT_DEVICE := YTX703L
 
 # Radio
 TARGET_RIL_VARIANT := caf
